@@ -38,7 +38,6 @@ a:hover,
 a:focus {
   text-decoration: none;
   outline: none;
-  color: #fff;
 }
 .section {
   padding: 90px 0;
@@ -227,11 +226,11 @@ a:focus {
   background: transparent;
 }
 .hero-area .contents h1 {
-  font-size: 30px;
+  font-size: 40px;
   font-weight: 100;
 }
 .hero-area .contents p {
-  font-size: 16px;
+  font-size: 24px;
   font-weight: 400;
   text-transform: uppercase;
 }
