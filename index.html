@@ -28,6 +28,7 @@
     <link href="css/main.css" rel="stylesheet">
     <link href="css/responsive.css" rel="stylesheet">
     <link href="css/animate.min.css" rel="stylesheet">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.1/dist/email.min.js"></script>
   </head>
 
   <body>
@@ -101,16 +102,16 @@
             <div class="col-sm-12">
                 <h3 class="text-center" style="font-size: 36px"><b>Check Out Our Partners</b></h3>
             </div>
-            <div class="col-md-4 col-sm-12 wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="300ms" style="padding:15px">
+            <div class="col-md-6 col-sm-12 wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="300ms" style="padding:15px">
               <div class="feature-item">
                 <div class="row text-center" >
-                    <a href="http://www.avantlink.com/click.php?tt=cl&merchant_id=30913c70-cab0-4515-9f14-73c936b2b04d&website_id=ea7dca45-39c1-4a37-b7d3-20c0a7d3c33e&url=https%3A%2F%2Fgunner.com" target="_blank" class="text-center"><img src="img/gunner.jpg" style="width:90%"/></a>
+                    <a href="http://www.avantlink.com/click.php?tt=cl&merchant_id=30913c70-cab0-4515-9f14-73c936b2b04d&website_id=ea7dca45-39c1-4a37-b7d3-20c0a7d3c33e&url=https%3A%2F%2Fgunner.com" target="_blank" class="text-center"><img src="img/gunner.jpg" style="width:70%"/></a>
                 </div>
                 
               </div>
             </div>
 
-            <div class="col-md-4 col-sm-12 wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="300ms" style="padding:15px">
+            <div class="col-md-6 col-sm-12 wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="300ms" style="padding:15px">
               <div class="feature-item">
                 <div class="row text-center" >
                     <a href="https://rockymountainhuntstrong.com/" target="_blank" class="text-center"><img src="img/Rocky_Mountain_Hunt-Strong-01_x200.png" style="width:90%"/></a>
@@ -118,13 +119,6 @@
                 
               </div>
             </div>
-            
-            <div class="col-md-4 col-sm-12 wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="300ms" style="padding:15px">
-              <div class="row text-center" >
-                  <a href="https://duckcamp.com/" target="_blank" class="text-center"><img src="img/duck.png" style="width:90%"/></a>
-              </div>
-              
-            </div>  
   
           </div>
   
@@ -176,6 +170,61 @@
           
 
 
+    </section>
+
+    <section id="profiles" class="section">
+      <div class="container">
+            <div class="section-header text-center">
+                <h1 class="section-title wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="100ms">GDIY Profiles</h1>
+                <p class="section-subtitle wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="400ms">GDIY Profiles are bonus episodes that feature your average DIY dog trainer and hunter.  While most people may not have the experience or knowledge for full blown episodes, ALL dog owners have a story of what got them involved and the main lessons learned along the way.  Hearing numerous people’s stories along with their mistakes, helps promote the idea that WE ALL STARTED AT THE SAME PLACE!</p>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-centered wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
+                  <div class="panel panel-default text-center" style="width: 91%">
+                    <div class="panel-body">
+                      <img style="width:100%" src="img/nick.JPG" />
+                      <h4 ><b>Nick Adair</b></h4>
+                      <a href="https://www.stitcher.com/podcast/gun-dog-it-yourself/e/66624991" target="_blank">Listen Now</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-centered wow fadeInDown text-center" data-wow-duration="1000ms" data-wow-delay="300ms">
+                    <div class="panel panel-default text-center" style="width: 90%">
+                        <div class="panel-body">
+                          <img style="width:100%" src="img/adam.jpeg" />
+                          <h4 ><b>Adam Williams</b></h4>
+                          <a href="https://www.stitcher.com/podcast/gun-dog-it-yourself/e/66624991" target="_blank">Listen Now</a>
+                        </div>
+                      </div>
+                </div>
+            </div>
+            <div class="row text-center">
+              <p class="section-subtitle wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="400ms">Are you interested in doing a GDIY Profile?  Fill this out real quick and we may be in touch soon!</p>
+              <div class="col-md-2"></div>
+              <div class="col-md-8">
+              <p id="successAlert"  class="alert alert-success">Thanks! We will reach out to you shortly.</p>
+              <p id="errorAlert"  class="alert alert-danger">There seems to be a problem. Please try again.</p>
+                <form id="form">
+                  <div class="form">
+                      <div class="form-group">
+                          <input type="text" required id="formName" name="formName" class="form-control" placeholder="Name"/>
+                      </div>
+                      <div class="form-group">
+                          <input type="email" required id="formEmail" name="formEmail" class="form-control" placeholder="Email"/>
+                      </div>
+                      <div class="form-group">
+                        <textarea type="text" required id="formInfo" name="formInfo" class="form-control" placeholder="Tell us about yourself"></textarea>
+                    </div>
+                      <div class="form-group">
+                          <button type="submit" class="btn btn-primary" >Send</button>
+                      </div>
+                  </div>
+              </form>
+              </div>
+              
+
+            </div>
+      </div>
     </section>
 
     <!-- <section id="why" class="section">
@@ -245,14 +294,56 @@
     <script src="js/smooth-on-scroll.js"></script>
     <script src="js/smooth-scroll.js"></script>
     <script src="js/main.js"></script>
-
-    
+ 
 
     <script>
         $(document).ready(function() {
             // This command is used to initialize some elements and make them work properly
             $.material.init();
+            $('#successAlert').hide()
+            $('#errorAlert').hide()
         });
+
+        $('#form').on('submit', function(event) {
+          event.preventDefault(); // prevent reload
+          
+          var formData = new FormData(this);
+          formData.append('service_id', 'default_service');
+          formData.append('template_id', 'template_olEiqW6x');
+          formData.append('user_id', 'user_vTXrvvqEGIiRXBPX9z3Wi');
+      
+          $.ajax('https://api.emailjs.com/api/v1.0/email/send-form', {
+              type: 'POST',
+              data: formData,
+              contentType: false, // auto-detection
+              processData: false // no need to parse formData to string
+          }).done(function() {
+              $('#form').hide()
+              $('#successAlert').show()
+              $('#errorAlert').hide()
+          }).fail(function(error) {
+              $('#errorAlert').show()
+          });
+      });
+
+
+
+
+
+      //   var templateParams = {
+      //       to_name: 'humph2mw@gmail.com',
+      //       from_name: 'gdiydevelopment@gmail.com',
+      //       message_html: 'Please Find out the attached file'
+      //     };
+
+      //     emailjs.sendEmail( 'default_service' ,'template_olEiqW6x', templateParams)
+      //     .then(function(response) {
+      //       console.log('SUCCESS!', response.status, response.text);
+      //     }, function(error) {
+      //       console.log('FAILED...', error);
+      //     })
+      // }
+
     </script>
 
   </body>
